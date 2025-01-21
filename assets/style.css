@@ -31,9 +31,10 @@ body {
 
 .content {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
+    flex-direction: row; /* Side-by-side layout */
+    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Space between text and image */
+    gap: 20px; /* Add some space between the sections */
 }
 
 /* Text Section */
