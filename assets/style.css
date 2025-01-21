@@ -1,132 +1,39 @@
-/* General Styles */
+/* Body Styling */
 body {
-    font-family: 'Century Gothic', 'Arial', sans-serif;
-    background-color: #6b856b; /* Soft light green */
-    color: #2f3e2f; /* Neutral dark green for text */
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #f4f8f4; /* Subtle neutral green */
+    color: #000; /* Black text for readability */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
-h1 {
-    font-size: 2.2rem;
-    color: #4a7151; /* Muted green for headings */
-    margin: 0 0 15px;
-}
-
-.lead {
-    font-size: 1.2rem;
-    color: #6b856b; /* Softer green for tagline */
-    margin-bottom: 15px;
-}
-
-p {
-    margin: 0 0 15px;
-    color: #2f3e2f; /* Neutral dark green for text */
-}
-
-/* Links */
-ul.list-unstyled a {
-    text-decoration: none;
-    font-size: 1rem;
-    color: #4a7151; /* Muted green for links */
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.2s ease;
-}
-
-ul.list-unstyled a:hover {
-    color: #2f3e2f; /* Slightly darker green on hover */
-}
-
-ul.list-unstyled i {
-    font-size: 1rem;
-}
-
-/* Image Grid Layout */
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    grid-gap: 8px; /* Small spacing between images */
-    justify-content: center;
-    align-items: center;
-}
-
-/* Square Images */
-.square-image {
-    width: 100%; /* Make the image fill the grid cell */
-    aspect-ratio: 1; /* Maintain square aspect ratio */
-    object-fit: cover; /* Crop the image to fit the square */
-}
-
-/* Container */
+/* Container Styling */
 .container {
-    width: 90%;
-    max-width: 900px;
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 40px auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
 }
 
-/* Content Layout */
-.content {
-    display: flex;
-    flex-direction: row; /* Side-by-side layout */
-    align-items: center; /* Vertically align items */
-    justify-content: space-between; /* Space between text and image */
-    gap: 20px;
-}
-
-.text-section {
-    flex: 1; /* Text section takes remaining space */
-    max-width: 60%; /* Limit text width for readability */
-    text-align: left;
-}
-
-.tagline {
-    font-size: 1rem;
-    color: #6b856b; /* Softer green for tagline */
-    margin-bottom: 20px;
-}
-
-.description {
-    font-size: 1rem;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-/* Social Links */
-.social-links {
-    list-style: none;
+/* Font Awesome Icons */
+ul.list-inline {
     padding: 0;
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
 }
 
-.social-links li {
-    margin: 0;
+ul.list-inline a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #000; /* Black icons */
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .content {
-        flex-direction: column;
-        text-align: center;
-    }
+ul.list-inline a:hover {
+    color: #4a7151; /* Muted green hover color */
+}
 
-    .text-section {
-        max-width: 100%; /* Full width on smaller screens */
-    }
-
-    .image-section {
-        margin-top: 20px;
-    }
+/* Image Styling */
+.row.g-2 img {
+    aspect-ratio: 2 / 3; /* Rectangle with a vertical orientation */
+    object-fit: cover; /* Ensure the image fills the rectangle */
+    border-radius: 4px; /* Slightly rounded corners */
 }
