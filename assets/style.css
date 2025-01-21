@@ -13,12 +13,12 @@ body {
 .top-section {
     background-color: #4a7151; /* Subtle muted green */
     color: #ffffff; /* White text for contrast */
-    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center content */
     align-items: flex-start; /* Align content to the left */
-    padding-left: 20px; /* Add space on the left */
+    padding: 40px 20px;
+    height: auto;
 }
 
 .top-section h1 {
