@@ -1,26 +1,28 @@
 /* General Styles */
 body {
     font-family: 'Century Gothic', 'Arial', sans-serif;
-    background-color: #f4f8f4; /* Soft light green */
+    background-color: #6b856b; /* Soft light green */
     color: #2f3e2f; /* Neutral dark green for text */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: #4a7151; /* Muted green for headings */
-    margin: 10px 0;
+    margin: 0 0 15px;
 }
 
 .lead {
     font-size: 1.2rem;
     color: #6b856b; /* Softer green for tagline */
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 p {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
+    color: #2f3e2f; /* Neutral dark green for text */
 }
 
 /* Links */
@@ -28,11 +30,11 @@ ul.list-unstyled a {
     text-decoration: none;
     font-size: 1rem;
     color: #4a7151; /* Muted green for links */
-    font-weight: bold;
+    font-weight: 600;
     display: flex;
     align-items: center;
-    gap: 10px;
-    transition: color 0.3s ease;
+    gap: 8px;
+    transition: color 0.2s ease;
 }
 
 ul.list-unstyled a:hover {
@@ -40,15 +42,23 @@ ul.list-unstyled a:hover {
 }
 
 ul.list-unstyled i {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-/* Image Styling */
-img {
-    max-width: 200px;
-    border: 5px solid #cde5cd; /* Light green border */
-    border-radius: 50%; /* Circular image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* Image Grid Layout */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-gap: 8px; /* Small spacing between images */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Square Images */
+.square-image {
+    width: 100%; /* Make the image fill the grid cell */
+    aspect-ratio: 1; /* Maintain square aspect ratio */
+    object-fit: cover; /* Crop the image to fit the square */
 }
 
 /* Container */
@@ -56,10 +66,12 @@ img {
     width: 90%;
     max-width: 900px;
     background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 /* Content Layout */
@@ -78,15 +90,14 @@ img {
 }
 
 .tagline {
-    font-size: 1.2rem;
-    color: #6b856b; /* Softer green */
+    font-size: 1rem;
+    color: #6b856b; /* Softer green for tagline */
     margin-bottom: 20px;
 }
 
 .description {
     font-size: 1rem;
-    color: #2f3e2f; /* Dark green for body text */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: justify;
 }
 
@@ -97,7 +108,7 @@ img {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .social-links li {
