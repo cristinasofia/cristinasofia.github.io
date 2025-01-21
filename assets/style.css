@@ -1,6 +1,9 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
 /* Body Styling */
 body {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif; /* Lightweight sans-serif font */
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -10,26 +13,29 @@ body {
 .top-section {
     background-color: #4a7151; /* Subtle muted green */
     color: #ffffff; /* White text for contrast */
-    height: 50vh; /* Half the viewport height */
+    height: 30vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Vertically center content */
+    align-items: flex-start; /* Align content to the left */
+    padding-left: 20px; /* Add space on the left */
 }
 
 .top-section h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 1.8rem; /* Lightweight and modern size */
+    font-weight: 400; /* Regular weight for the heading */
 }
 
 .top-section p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Slightly larger for readability */
     margin: 10px 0 20px;
+    font-weight: 300; /* Lighter weight for the tagline */
 }
 
 .icon-link {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem; /* Match the text size */
     color: #ffffff; /* White icons */
     transition: color 0.3s ease;
 }
