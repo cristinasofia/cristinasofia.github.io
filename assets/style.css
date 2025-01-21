@@ -1,39 +1,64 @@
 /* Body Styling */
 body {
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    background-color: #f4f8f4; /* Subtle neutral green */
-    color: #000; /* Black text for readability */
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
-/* Container Styling */
-.container {
-    border-radius: 8px; /* Rounded corners for the container */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for subtle depth */
+/* Top Section */
+.top-section {
+    background-color: #4a7151; /* Subtle muted green */
+    color: #ffffff; /* White text for contrast */
+    height: 50vh; /* Half the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Font Awesome Icons */
-ul.list-inline {
-    padding: 0;
+.top-section h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
-ul.list-inline a {
+.top-section p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.icon-link {
     text-decoration: none;
-    font-size: 12px;
-    color: #000; /* Black icons */
-    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ffffff; /* White icons */
     transition: color 0.3s ease;
 }
 
-ul.list-inline a:hover {
-    color: #4a7151; /* Muted green hover color */
+.icon-link:hover {
+    color: #cde5cd; /* Lighter green on hover */
 }
 
-/* Image Styling */
-.row.g-2 img {
+/* Bottom Section */
+.bottom-section {
+    background-color: #ffffff; /* White background */
+    padding: 40px 0;
+}
+
+.bottom-section img {
     aspect-ratio: 2 / 3; /* Rectangle with a vertical orientation */
     object-fit: cover; /* Ensure the image fills the rectangle */
     border-radius: 4px; /* Slightly rounded corners */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .top-section {
+        text-align: center;
+        height: auto; /* Adjust height for smaller screens */
+        padding: 40px 0;
+    }
+
+    .bottom-section img {
+        width: 100%; /* Full width for images on smaller screens */
+    }
 }
