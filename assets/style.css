@@ -11,7 +11,7 @@ body {
 
 /* Top Section */
 .top-section {
-    background-color: #4a7151; /* Subtle muted green */
+    background-color: #DCAE96;
     color: #ffffff; /* White text for contrast */
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ body {
 }
 
 .icon-link:hover {
-    color: #cde5cd; /* Lighter green on hover */
+    color: #B17C70;
 }
 
 /* Bottom Section */
@@ -60,7 +60,7 @@ body {
 @media (max-width: 768px) {
     .top-section {
         text-align: center;
-        height: auto; /* Adjust height for smaller screens */
+        height: auto;
         padding: 40px 0;
     }
 
