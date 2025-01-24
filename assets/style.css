@@ -11,7 +11,7 @@ body {
 
 /* Top Section */
 .top-section {
-    background-color: #DCAE96;
+    background-color: #B17C70;
     color: #ffffff; /* White text for contrast */
     display: flex;
     flex-direction: column;
@@ -41,7 +41,7 @@ body {
 }
 
 .icon-link:hover {
-    color: #B17C70;
+    color: #DCAE96;
 }
 
 /* Bottom Section */
